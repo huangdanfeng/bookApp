@@ -1,16 +1,11 @@
-# my-project
+# 图书小程序
 
-> A Mpvue project
+> 一个mpvue项目，个人工具类
 
 ## Build Setup
 
-``` bash
-# 初始化项目
-vue init mpvue/mpvue-quickstart myproject
-cd myproject
-
 # 安装依赖
-yarn
+npm install
 
 # 开发时构建
 npm dev
