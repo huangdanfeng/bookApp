@@ -1,0 +1,7 @@
+<template name="1bf6ccfe">
+  <view class="_div data-v-1fb80d35">
+    <view class="_div data-v-1fb80d35 card"><progress percent="{{percent}}" show-info font-size="{{size}}" active="true" stroke-width="8" class="_progress data-v-1fb80d35" />
+      <view class="_div data-v-1fb80d35">今年还剩<label class="_span data-v-1fb80d35 time"> {{time}} </label>天，出走半生，愿你归来仍是少年！！！</view>
+    </view>
+  </view>
+</template>

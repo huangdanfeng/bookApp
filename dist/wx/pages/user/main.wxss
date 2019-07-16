@@ -1,0 +1,34 @@
+
+.contain .header.data-v-50f8889d {
+  text-align: center;
+  padding: 40rpx;
+}
+.contain .header ._img.data-v-50f8889d {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.contain .header .text.data-v-50f8889d {
+  font-size: 32rpx;
+  padding: 10rpx;
+}
+.contain .header .user.data-v-50f8889d {
+  background-color: #fff;
+  line-height: 1.5;
+}
+.contain .header .user.data-v-50f8889d::after {
+  border: none;
+}
+.contain .time.data-v-50f8889d {
+  padding: 20rpx;
+}
+.contain .btn.data-v-50f8889d {
+  padding: 60rpx;
+}
+.card.data-v-1fb80d35 {
+  font-size: 28rpx;
+}
+.card .time.data-v-1fb80d35 {
+  color: coral;
+  font-size: 36rpx;
+}

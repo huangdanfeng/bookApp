@@ -1,0 +1,10 @@
+<import src="/components/card.vue.wxml" /><template name="46dc7c18">
+  <view class="_div data-v-50f8889d contain">
+    <view class="_div data-v-50f8889d header"><button class="_button data-v-50f8889d user" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image src="{{src}}" alt="图片加载失败" class="_img data-v-50f8889d"></image>
+        <view class="_div data-v-50f8889d text">{{name}}</view>
+      </button></view>
+    <view class="_div data-v-50f8889d time"><template data="{{...$root[$kk+'0'], $root}}" is="1bf6ccfe"></template></view>
+    <view wx:if="{{src != '../../static/images/user.png'}}" class="_div data-v-50f8889d btn"><button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-50f8889d">添加图书</button></view>
+  </view>
+</template>

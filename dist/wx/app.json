@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/user/main",
+    "pages/index/main",
+    "pages/tool/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "西柚图书",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#e6e6e6"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#2c2c2c",
+    "borderStyle": "black",
+
+    "list": [{
+      "text": "图书",
+      "pagePath": "pages/index/main",
+      "iconPath": "static/tabs/book.png",
+      "selectedIconPath": "static/tabs/book-active.png"
+    }, {
+      "text": "工具",
+      "pagePath": "pages/tool/main",
+      "iconPath": "static/tabs/tool.png",
+      "selectedIconPath": "static/tabs/tool-active.png"
+    }, {
+      "text": "用户",
+      "pagePath": "pages/user/main",
+      "iconPath": "static/tabs/user.png",
+      "selectedIconPath": "static/tabs/user-active.png"
+    }],
+    "position": "bottom"
+  }
+}
