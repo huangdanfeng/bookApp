@@ -25,7 +25,15 @@ router.post('/upload', controllers.upload)
 router.get('/tunnel', controllers.tunnel.get)
 // POST 用来处理信道传递过来的消息
 router.post('/tunnel', controllers.tunnel.post)
+// 添加图书
 router.get('/demo', controllers.demo)
+//查询图书
+router.get('/booklist', controllers.booklist)
+//图书详情
+router.get('/detail', controllers.detail)
+//图书排行榜
+router.get('/top', controllers.top)
+
 
 // --- 客服消息接口 Demo --- //
 // GET  用来响应小程序后台配置时发送的验证请求

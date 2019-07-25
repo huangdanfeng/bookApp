@@ -22,6 +22,7 @@ module.exports = {
     // allow paren-less arrow functions
     'arrow-parens': 0,
     'semi': 0,
+    'no-multi-spaces': 0,
     'no-multiple-empty-lines': 0,
     'no-trailing-spaces': 0,
     // allow async-await

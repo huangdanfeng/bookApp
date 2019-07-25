@@ -1,7 +1,8 @@
 import {host} from '@/pages/config';
 import {showModal, showLoading} from 'utils/index'
 
-export function request (url, method, data) {
+// 微信调用ajax接口
+export function request (url, method, data = {}) {
   return new Promise((resolve, reject) => {
     wx.request({
       url: host + url, // 仅为示例，并非真实的接口地址
@@ -20,6 +21,8 @@ export function request (url, method, data) {
     })
   })
 }
+
+// 微信扫描二维码接口
 export function scan (type = false) {
   return new Promise((resolve, reject) => {
     wx.scanCode({

@@ -18,6 +18,7 @@ export function formatTime (date) {
   return `${t1} ${t2}`
 }
 
+// 显示弹框
 export function showModal (title, content) {
   wx.showModal({
     title,
@@ -26,6 +27,7 @@ export function showModal (title, content) {
   })
 }
 
+// 显示提示
 export function showToast (title, icon) {
   wx.showToast({
     title,
@@ -33,14 +35,19 @@ export function showToast (title, icon) {
     duration: 2000
   });
 }
+
+// 显示loading
 export function showLoading (title) {
   wx.showLoading({
     title
   })
 }
+
+// 隐藏loading
 export function hideLoading () {
   wx.hideLoading()
 }
+
 export default {
   formatNumber,
   formatTime,

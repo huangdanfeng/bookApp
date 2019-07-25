@@ -30,12 +30,12 @@ export default {
 
   data () {
     return {
-      src: '../../static/images/user.png',
-      name: '点击登录',
-      warnSize: 'default',
-      disabled: false,
-      plain: false,
-      loading: false
+      src: '../../static/images/user.png', // 用户头像
+      name: '点击登录', // 用户名称
+      warnSize: 'default', // 按钮大小
+      disabled: false, // 按钮是否可用
+      plain: false, // 按钮是否镂空，背景色透明
+      loading: false // 名称前是否带 loading 图标
     }
   },
 
@@ -48,13 +48,16 @@ export default {
     }
   },
   methods: {
+    // 扫描图书二维码
     async scanHandle () {
       const user = wx.getStorageSync('userInfo');
       let res = await scan();
       let {data} = await request('/demo', 'get', {
         isbn: res.result,
         method: 'GET',
-        openId: user.openId
+        openId: user.openId,
+        nickName: user.nickName,
+        avatarUrl: user.avatarUrl
       });
       if (data && data.code === 0) {
         showModal('成功', '图书已添加')
@@ -63,6 +66,7 @@ export default {
       }
       hideLoading();
     },
+    // 用户登录
     login (res) {
       const user = wx.getStorageSync('userInfo');
       if (!user.openId && res.target.userInfo) {
